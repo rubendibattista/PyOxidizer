@@ -91,6 +91,10 @@ Backwards Compatibility Notes
 New Features
 ^^^^^^^^^^^^
 
+* Support for Python 3.10 on all previously supported platforms. Python 3.9 is
+  still the default Python version. Target Python 3.10 by passing
+  ``python_version = "3.10"`` to the :py:func:`default_python_distribution`
+  Starlark function.
 * Default Python distributions upgraded from 3.8.11 and 3.9.6 to 3.8.12 and
   3.9.7. Various library dependencies have also been upgraded. See
   https://github.com/indygreg/python-build-standalone/releases/tag/20211012 and
