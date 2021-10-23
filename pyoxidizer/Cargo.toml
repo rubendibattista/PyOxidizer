@@ -61,7 +61,8 @@ which = "4"
 zstd = "0.9"
 
 [dependencies.pyo3-build-config]
-version = "0.14.5"
+git = "https://github.com/indygreg/PyO3"
+branch = "pymem-use"
 default-features = false
 
 [dependencies.python-packaging]
