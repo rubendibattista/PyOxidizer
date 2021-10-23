@@ -40,7 +40,9 @@ path = "../python-oxidized-importer"
 default-features = false
 
 [dependencies.pyo3]
-version = "0.14.5"
+# version = "0.14.5"
+git = "https://github.com/indygreg/PyO3"
+branch = "pyoxidizer"
 default-features = false
 features = ["macros"]
 
@@ -49,8 +51,9 @@ version = "0.11.0-pre"
 path = "../python-packaging"
 default-features = false
 
-[build-dependencies]
-pyo3-build-config = "0.14.5"
+[build-dependencies.pyo3-build-config]
+git = "https://github.com/indygreg/PyO3"
+branch = "pyoxidizer"
 
 [dev-dependencies]
 pathdiff = "0.2"
